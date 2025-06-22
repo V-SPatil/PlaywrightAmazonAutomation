@@ -1,4 +1,4 @@
-import { test, expect } from '../base.test.js';
+import { test, expect } from '../testsetup.js';
 
 test('Search for product using search bar', async ({ page }) => {
   await page.goto('https://www.amazon.in');
