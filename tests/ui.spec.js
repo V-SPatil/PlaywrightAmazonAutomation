@@ -1,4 +1,4 @@
-import { test, expect } from '../base.test.js';
+import { test, expect } from '../testsetup.js';
 
 test('Apply sort by Price: Low to High', async ({ page }) => {
   await page.goto('https://www.amazon.in');

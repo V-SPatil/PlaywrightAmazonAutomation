@@ -1,7 +1,7 @@
 import { test, expect } from '../testsetup.js';
 
 test('Add product to cart and validate cart count', async ({ page }) => {
-  await page.goto('https://www.amazon.in');
+  await page.goto('https://www.amazon.in',{waitUntil:'load',timeout:0});
   await page.locator('#twotabsearchtextbox').fill('pen drive');
   await page.keyboard.press('Enter');
   const product = page.locator('.s-main-slot .s-result-item h2 a').first();
